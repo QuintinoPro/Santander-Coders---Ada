@@ -35,6 +35,13 @@ menu li{
     margin: 0 5px; 
 }
 
+menu li:hover{
+    background-color: transparent;
+    color: black;
+    border-style:dotted ;
+
+}
+
 
 a{
     text-decoration: none;
