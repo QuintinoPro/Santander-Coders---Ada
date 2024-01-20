@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            width: 100px;
+            border: 1px solid blueviolet;
+        }
+
+        caption,
+        thead,
+        tr,
+        th,
+        td {
+            border: 1px solid blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Total de Produtos Vendidos</caption>
+
+        <thead>
+            <tr>
+                <th colspan="2">Data</th>
+                <th>Jan</th>
+                <th>Fev</th>
+                <th>Mar</th>
+                <th rowspan="2">Total Geral</th>
+            </tr>
+            <tr>
+                <th>Categoria</th>
+                <th>Produto</th>
+                <th colspan="3">Quantidade Vendida</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="4">Esportivo</td>
+            </tr>
+            <tr>
+                <td>Bicicleta</td>
+                <td>20</td>
+                <td>15</td>
+                <td>10</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>Scooter</td>
+                <td>30</td>
+                <td>25</td>
+                <td>10</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>Skate</td>
+                <td>40</td>
+                <td>10</td>
+                <td>5</td>
+                <td>55</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Vendido</td>
+                <td>90</td>
+                <td>50</td>
+                <td>25</td>
+                <td>165</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+</body>
+
+</html>
