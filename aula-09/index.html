@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+    <style>
+        div.produto{
+            width: 200px;
+            border: 2px solid orangered;
+        }
+        h1{
+            font-size: 2.1rem;
+        }
+        p{
+            font-size: 2rem;
+            color: aquamarine;
+            font-weight: 600;
+        }
+
+        p.promocional{
+            font-size: 2.1rem;
+        }
+
+        p.promocional::after{
+            content: 'Promocional';
+            position: relative;
+            left: 10px;
+            font-size: 0.5rem;
+            text-transform: lowercase;
+            color: gold;
+            width: 50px;
+            height: 50px;
+            display: inline-flex;
+            align-items: center;
+            background-color: violet;
+            border-radius: 50%;
+
+        }
+
+        img{
+            height: 300px;
+        }
+
+        .expositor{
+            display: flex;
+            gap: 1rem;
+        }
+
+        .expositor >*{
+            flex: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="expositor">
+        <div class="produto">
+            <h1>banana</h1>
+            <img src="https://source.unsplash.com/random/?banana" alt="banana">
+            <p class="promocional">R$7,77</p>
+        </div>
+
+        <div class="produto">
+            <h1>banana</h1>
+            <img src="https://source.unsplash.com/random/?banana&2" alt="banana">
+            <p>R$7,77</p>
+        </div>
+    </div>
+</body>
+</html>
