@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body.ligth{
+        background-color: black;
+        color: white;
+    }
+
+    body.dark{
+        background-color: white;
+        color: black;
+    }
+</style>
+<body class="ligth">
+    <button onclick="alternarTema()">Alternar Tema</button>
+
+    <script>
+        function alternarTema() {
+            const body = document.body;
+
+            let isLigth = body.classList.contains("ligth");
+
+            if (isLigth) {
+                body.classList.remove("ligth");
+                body.classList.add("dark");
+            } else {
+                body.classList.remove("dark");
+                body.classList.add("ligth");
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="meuFormulário">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" value="lucas">
+      
+    </form>
+
+    <p>Para 1</p>
+    <p>Para 2</p>
+    <p>Para 3</p>
+
+</body>
+
+<script>
+    const meuFormulário = document.getElementsByName("nome")[0];
+    console.log("Conteudo: ", meuFormulário.value);
+
+    meuFormulário.value = "gay";
+    console.log("Conteudo: ", meuFormulário.value);
+
+
+    const paragrafos = document.getElementsByTagName("p");
+    console.log(paragrafos);
+    for (let i = 0; i <  paragrafos.length; i++) {
+        paragrafos[i].innerText = "Novo texto para o paragrafo " + i;
+        
+    }
+</script>
+
+</html>
