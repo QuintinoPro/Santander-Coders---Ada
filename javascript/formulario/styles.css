@@ -1,0 +1,57 @@
+.header{
+    width: 100%;
+    height: 7%;
+    background-color: rgb(52, 47, 47);
+    position: absolute;
+    top: 0;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.formRow{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 1rem 0
+}
+
+.name{
+    width: 38%;
+}
+
+.surname{
+    width: 60%
+}
+
+.date{
+    width: 32%
+}
+
+.profission{
+    width: 32%
+}
+
+.cpf{
+    width: 32%
+}
+
+.email{
+    width: 60%;
+}
+.password{
+    width: 38%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    width: 100%;
+}
